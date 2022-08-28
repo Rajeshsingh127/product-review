@@ -21,16 +21,17 @@
     <main class="container">
       <!-- section descibes the square  -->
       <section class="card">
-        <img
-          src="images/image-product-desktop.jpg"
-          srcset="
-            ./images/image-product-desktop.jpg 600w,
-            ./images/image-product-mobile.jpg  500w
-          "
-          sizes="(min-width:600px) 600px,(max-width: 575px ) 500px"
-          alt="product image"
-          class="card-img"
-        />
+        <picture class="imgdynamic">
+          <source
+            media="(max-width:575px)"
+            srcset="images/image-product-mobile.jpg"
+          />
+          <img
+            src="images/image-product-desktop.jpg"
+            alt="product image"
+            class="card-img"
+          />
+        </picture>
 
         <article class="card-detail">
           <h5 class="card-category">PERFUME</h5>
