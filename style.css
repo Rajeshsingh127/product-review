@@ -25,6 +25,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    width: 100vw;
 }
 
 .card{
@@ -110,6 +112,15 @@ margin-top: 1.75rem;
 }
 
 
+.card-cart{
+    cursor:pointer;
+}
+
+.card-cart:active{
+    background-color: var(--Verydarkblue);
+}
+
+
 @media screen and (max-width: 575px) {
     .card{
         flex-direction: column;
@@ -122,18 +133,26 @@ margin-top: 1.75rem;
     .card{
         width: 50%;
         height: auto;
-        display: flex;
     }
+
+
 
     .card-img{
         width: 100%;
         height: 100%;
+        object-fit: cover;
     }
 
+    .imgdynamic{
+        width: 100%;
+    }
+    
     .card-detail{
+        width: 100%;
+        padding: 2rem;
+        margin: 0;
         display: flex;
         flex-direction: column;
         row-gap: 2rem;
-        margin: 3rem;
     }
 }
