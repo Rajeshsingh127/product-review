@@ -50,6 +50,7 @@ body{
     color: var(--Darkgrayishblue);
     letter-spacing: .3rem;
     font-weight: 700;
+    font-size: 1.1rem;
 }
 
 .card-title{
